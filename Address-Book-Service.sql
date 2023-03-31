@@ -40,3 +40,5 @@ describe address_book_service;
 update address_book_service set name='book1',type='friend'  where firstname='lucky'||firstname='xyz';
 update address_book_service set name='book2',type='family'  where firstname='bhargav'||firstname='cdb';
 select * from address_book_service;
+#UC10
+select type ,count(*) from address_book_service group by type;
