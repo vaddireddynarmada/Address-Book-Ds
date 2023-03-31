@@ -33,3 +33,10 @@ select * from address_book_service where city = 'Hyderabad' or state = 'Telangan
 select city, state ,count(*) from address_book_service group by city;
 #UC8
 select * from address_book_service where city = 'Hyderabad' order by FirstName asc;
+#UC9
+alter table address_book_service add Name varchar(25) after lastname,
+add Type varchar(20) after name;
+describe address_book_service;
+update address_book_service set name='book1',type='friend'  where firstname='lucky'||firstname='xyz';
+update address_book_service set name='book2',type='family'  where firstname='bhargav'||firstname='cdb';
+select * from address_book_service;
