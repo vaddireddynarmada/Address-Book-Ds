@@ -27,3 +27,5 @@ select * from address_book_service;
 #UC5
 delete from address_book_service where firstName='Vihan';
 select * from address_book_service;
+#UC6
+select * from address_book_service where city = 'Hyderabad' or state = 'Telangana';
