@@ -13,3 +13,11 @@ ZipCode int not null ,
 Phone_number double not null
 );
 describe address_book_service;
+#UC3
+ insert into address_book_service(firstName,lastName,address,city,state,email,zipCode,Phone_number)values
+     ('Lucky','B','Hasthinapuram','Hyderabad','Telangana','Lucky@gmail.com','4578667','4567892396'),
+	 ('Vihan','C','Emjal','Hyderabad','Telangana','Vihan@gmail.com','876548','5379853454'),
+	 ('Bhargav','A','Chapapet','Hyderabad','Telangana','Bhargav@gmail.com','34587','9633413456'),
+     ('Xyz','L','asd','Nalagonda','Telangana','Xyz@gmail.com','34567','9786574647'),
+     ('Cdb','R','dsa','Kadapa','AndhraPradesh','Cdb@gmail.com','98765','9765434567');
+select*from address_book_service;
