@@ -24,3 +24,6 @@ select*from address_book_service;
 #UC4
 update address_book_service set Phone_number='9645678765' where firstName='Lucky';
 select * from address_book_service;
+#UC5
+delete from address_book_service where firstName='Vihan';
+select * from address_book_service;
