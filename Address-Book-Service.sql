@@ -31,3 +31,5 @@ select * from address_book_service;
 select * from address_book_service where city = 'Hyderabad' or state = 'Telangana';
 #UC7
 select city, state ,count(*) from address_book_service group by city;
+#UC8
+select * from address_book_service where city = 'Hyderabad' order by FirstName asc;
