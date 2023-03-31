@@ -42,3 +42,32 @@ update address_book_service set name='book2',type='family'  where firstname='bha
 select * from address_book_service;
 #UC10
 select type ,count(*) from address_book_service group by type;
+#UC11
+create table friends(
+FirstName varchar(20) not null ,
+LastName varchar(20) not null ,
+Name varchar(25) not null,
+Type varchar(20) not null,
+Address varchar(100) not null ,
+City varchar(30) not null ,
+State varchar(30) not null ,
+Email varchar(30) not null ,
+ZipCode int not null ,
+Phone_number double not null
+);
+insert into friends select * from address_book_service where type="friend";
+select * from friends;
+create table family(
+FirstName varchar(20) not null ,
+LastName varchar(20) not null ,
+Name varchar(25) not null,
+Type varchar(20) not null,
+Address varchar(100) not null ,
+City varchar(30) not null ,
+State varchar(30) not null ,
+Email varchar(30) not null ,
+ZipCode int not null ,
+Phone_number double not null
+);
+insert into family select * from address_book_service where type="family";
+select * from family;
