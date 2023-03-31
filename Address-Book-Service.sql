@@ -21,3 +21,6 @@ describe address_book_service;
      ('Xyz','L','asd','Nalagonda','Telangana','Xyz@gmail.com','34567','9786574647'),
      ('Cdb','R','dsa','Kadapa','AndhraPradesh','Cdb@gmail.com','98765','9765434567');
 select*from address_book_service;
+#UC4
+update address_book_service set Phone_number='9645678765' where firstName='Lucky';
+select * from address_book_service;
