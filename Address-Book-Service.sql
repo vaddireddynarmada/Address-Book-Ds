@@ -55,7 +55,7 @@ Email varchar(30) not null ,
 ZipCode int not null ,
 Phone_number double not null
 );
-insert into friends select * from address_book_service where type="friend";
+insert into friends select * from address_book_service where Type="friend";
 select * from friends;
 create table family(
 FirstName varchar(20) not null ,
@@ -71,3 +71,12 @@ Phone_number double not null
 );
 insert into family select * from address_book_service where type="family";
 select * from family;
+#UC13
+select * from friends where city = 'Hyderabad' or state = 'Telangana';
+select * from family where city = 'Hyderabad' or state = 'Telangana';
+select city, state ,count(*) from friends group by city;
+select city, state ,count(*) from family group by city;
+select * from friends where city = 'Hyderabad' order by FirstName asc;
+select * from family where city = 'Hyderabad' order by FirstName asc;
+select type ,count(*) from friends group by type;
+select type ,count(*) from family group by type;
